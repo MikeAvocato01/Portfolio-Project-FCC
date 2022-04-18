@@ -4,7 +4,8 @@
     --span-color: #222;
     --greenYellow-color: greenyellow; 
     --form-color: rgba(0, 0, 0, 0.4); 
-    --back-project: #222;  
+    --back-project: #222;
+    --item-hover: #3CB371;    
   }
 body {
     box-sizing: border-box;
@@ -40,6 +41,9 @@ h1 span {
     background-color: var(--greenYellow-color);
 }
 nav {
+    display: none;
+}
+.project-buttom {
     display: none;
 }
 header label {
@@ -84,6 +88,7 @@ header label {
     --greenYellow-color: #DA70D6; 
     --form-color: rgba(224, 159, 186, 0.5);
     --back-project: #F5F5F5; 
+    --item-hover: #DA70D6;
   }
 /*MAIN*/
 main {
@@ -173,7 +178,7 @@ a {
     margin-left: 5px;
 }
 
-#contact form {
+#contact_me form {
     color: var(--color-white);
     border: solid 1px #404040;;
     background-color: var(--form-color);
@@ -181,7 +186,7 @@ a {
     margin: 0 30px;
     border-radius: 10px;
 }
-#contact form p {
+#contact_me form p {
     font-size: 20px;
     margin-bottom: 0;
 }
@@ -255,27 +260,98 @@ script {
 }
 /*MEDIA FOR TABLET*/ 
 @media (min-width: 760px) {
-    #contact .form_social form {
+    #social_media div a .fa-facebook::after{
+        content: " Facebook";
+    }
+    #social_media div a .fa-twitter::after{
+        content: " Twitter";
+    }
+    #social_media div a .fa-instagram::after{
+        content: " Instagram";
+    }
+    #social_media div a .fa-free-code-camp::after{
+        content: "FreeCodeCamp";
+    }
+    #contact_me .form_social form {
         width: 250px;
     }
     .form_social {
         display: flex;
     }
-    #contact .form_social #social_media { 
+    #contact_me .form_social #social_media { 
         margin-left: auto;
         margin-right: 50px;
     }
-    #contact .form_social #social_media p {
+    #contact_me .form_social #social_media p {
         margin-top: 0;
         padding: 10px 60px;
     }
-    #contact .form_social #social_media div {
+    #contact_me .form_social #social_media div {
         flex-direction: column;
         align-items: center;
     }
-    #contact .form_social #social_media div a {
+    #contact_me .form_social #social_media div a {
         font-size: 10px;
         margin-bottom: 20px;
+    }
+
+}
+/*MEDIA FOR DESTOKP*/
+@media (min-width: 1024px) {
+    nav {
+        display: inherit;
+        margin-left: auto;
+    }
+    nav ul {
+        width: 600px;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    nav ul a:hover {
+        color: var(--item-hover);
+        padding-bottom: 5px;
+        border-bottom: 5px solid var(--greenYellow-color);
+        border-radius: 10px;
+    }
+    main #destokp_display {
+        display: flex;
+        flex-direction: row-reverse;
+        line-height: 30px;
+    }
+    main #destokp_display #description {
+        margin-left: auto;
+    }
+    main #destokp_display #image-me {
+        margin-right: auto;
+    }
+    main #destokp_display #description h2 {
+        margin-top: 75px;
+        margin-bottom: 25px;
+    }
+    main #destokp_display p {
+        text-align: center;
+        width: 350px;
+    }
+    .project-buttom {
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 18px;
+        color: var(--color-white);
+        background-color: var(--item-hover);
+        display: block;
+        margin: 0 auto;
+        width: 90px;
+        height: 35px;
+        margin-top: 0;
+
+    }
+    .project-buttom:hover {
+        transform: scale(1.2);
+        box-shadow: -3px -3px var(--form-color), 3px 3px var(--form-color);
     }
 
 }
