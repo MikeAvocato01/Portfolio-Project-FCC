@@ -13,7 +13,9 @@ body {
     background-color: var(--background-color);
     font-family: monospace;
     padding-bottom: 10px;
+    border: var(--background-color) solid 2px;
 }
+
 /*HEADER*/
 header {
     display: flex;
@@ -36,6 +38,9 @@ h1 span {
     width: 75px;
     margin-left: 10px;
     background-color: var(--greenYellow-color);
+}
+nav {
+    display: none;
 }
 header label {
     background-color: #222; 
@@ -247,4 +252,30 @@ footer {
 script {
     width: 0;
     height: 0;
+}
+/*MEDIA FOR TABLET*/ 
+@media (min-width: 760px) {
+    #contact .form_social form {
+        width: 250px;
+    }
+    .form_social {
+        display: flex;
+    }
+    #contact .form_social #social_media { 
+        margin-left: auto;
+        margin-right: 50px;
+    }
+    #contact .form_social #social_media p {
+        margin-top: 0;
+        padding: 10px 60px;
+    }
+    #contact .form_social #social_media div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact .form_social #social_media div a {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
 }

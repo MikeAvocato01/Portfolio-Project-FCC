@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/3fb55c09cc.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -18,14 +18,30 @@
             <h1>Maik()<span>;</span></h1>
             <div id="style-for-h1"></div>
         </div>
-        <div id="light_dark"> 
+        <nav id="nav-bar">
+            <ul>
+                <a href="#about_me">
+                    <li></li>
+                </a>
+                <a href="#projects">
+                    <li></li>
+                </a>
+                <a href="contact_me">
+                    <li></li>
+                </a>
+                <a href="#follow_me">
+                    <li></li>
+                </a>
+            </ul>
+        </nav>
+        <div id="light_dark">
             <input type="checkbox" class="checkbox" id="checkbox">
-          <label for="checkbox">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fas fa-sun"></i> 
-            <div id="ball"></div>
-          </label>
-          </div>
+            <label for="checkbox">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div id="ball"></div>
+            </label>
+        </div>
     </header>
 
     <main>
@@ -141,32 +157,37 @@
             <div class="section-stl">
                 <h3>Contact me</h3>
             </div>
-            <form action="#nowhere">
-                <p>Name:</p>
-                <input id="name" type="text">
-                <p>Email:</p>
-                <input id="email" type="email">
-                <p>Send a message</p>
-                <textarea name="message" id="message"> Write your message here...
-                    </textarea>
-                <button>Send</button>
-            </form>
-            <div id="social_media">
-                <p>Social Media</p>
-                <div>
-                    <a href="https://www.facebook.com/maikel.iriarte.5" target="_blank"><i
-                            class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/Mike01Aguacate" target="_blank"><i class="fa-brands fa-twitter"></i> </a>
-                    <a href="https://www.instagram.com/mike01aguacate/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
-                    <a href="https://www.freecodecamp.org/Mike01" target="_blank"><i class="fa-brands fa-free-code-camp"></i> </a>
-                </div>
+            <div class="form_social">
+                <form action="#nowhere">
+                    <p>Name:</p>
+                    <input id="name" type="text" placeholder="Max Holloway">
+                    <p>Email:</p>
+                    <input id="email" type="email" placeholder="example@gmail.com">
+                    <p>Send a message</p>
+                    <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                    <button>Send</button>
+                </form>
+                <div id="social_media">
+                    <p>Social Media</p>
+                    <div>
+                        <a href="https://www.facebook.com/maikel.iriarte.5" target="_blank"><i
+                                class="fa-brands fa-facebook"> Facebook</i></a>
+                        <a href="https://twitter.com/Mike01Aguacate" target="_blank"><i
+                                class="fa-brands fa-twitter"> Twitter</i> </a>
+                        <a href="https://www.instagram.com/mike01aguacate/" target="_blank"><i
+                                class="fa-brands fa-instagram"> Instragram</i></a>
+                        <a href="https://www.freecodecamp.org/Mike01" target="_blank"><i
+                                class="fa-brands fa-free-code-camp">FreeCodeCamp</i> </a>
+                    </div>
 
+
+                </div>
             </div>
         </section>
 
     </main>
-    <footer>  
-        <p><small>This Page was created by Maikel Iriarte</small></p>
+    <footer>
+        <p><small>*This Page was created by Maikel Iriarte*</small></p>
     </footer>
     <script type="text/javascript" src="./index.js"></script>
 </body>
