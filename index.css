@@ -128,6 +128,9 @@ main section #explanation  {
     margin-right: 20px;
     font-size: 20px;
 }
+#image-collage {
+    display: none;
+}
 .project-stl {
     box-shadow: -5px 5px 5px #777, 5px -5px 5px #777;
     font-size: 18px;
@@ -215,7 +218,6 @@ button {
     height: 40px;
     margin-top: 10px;
 }
-
 #social_media p {
     background-color: #3CB371;
     text-align: center;
@@ -301,6 +303,7 @@ script {
     nav {
         display: inherit;
         margin-left: auto;
+        margin-top: 10px;
     }
     nav ul {
         width: 600px;
@@ -353,5 +356,23 @@ script {
         transform: scale(1.2);
         box-shadow: -3px -3px var(--form-color), 3px 3px var(--form-color);
     }
+    #flex-container-image {
+        display: flex;
+        justify-content: space-between;   
+    }
+   #flex-container-image #explanation {
+        width: 95%; 
+        margin-left: 50px;
+    }
+    #image-collage {
+        display: inherit;
+    }
+    #flex-container-image #image-collage img {
+        border: #222 solid 8px;
+        width: 90%; 
+        height: auto;
+        margin-top: 10px; 
+    }
+       
 
 }
