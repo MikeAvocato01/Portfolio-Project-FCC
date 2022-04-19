@@ -14,7 +14,7 @@ body {
     background-color: var(--background-color);
     font-family: monospace;
     padding-bottom: 10px;
-    border: var(--background-color) solid 2px;
+    border: var(--background-color) solid 10px;
 }
 
 /*HEADER*/
@@ -376,6 +376,19 @@ script {
     #projects-container {
         display: flex;
     }
-       
+    .form_social {
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+    }  
+    #contact_me .form_social form {
+        width: 350px;
+    }
+    input{
+        margin-left: 12px;
+    }
+    form p {
+        margin-left: 15px;
+    }
 
 }
