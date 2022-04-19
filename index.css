@@ -373,6 +373,9 @@ script {
         height: auto;
         margin-top: 10px; 
     }
+    #projects-container {
+        display: flex;
+    }
        
 
 }
