@@ -1,7 +1,7 @@
 # Portfolio-Project-FCC
 A portfolio project created for the responsive Web Design Certification at FreeCodeCamp.org. 
 
-##Technologies used:
+## Technologies used:
 
 + Html: 
   Common use of Html for creating an accessible layout of the page.  
