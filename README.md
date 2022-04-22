@@ -4,7 +4,7 @@ A portfolio project created for the responsive Web Design Certification at FreeC
 ##Technologies used:
 
 + Html: 
-  Common use of Html for creating a accessible layout of the page.  
+  Common use of Html for creating an accessible layout of the page.  
    
 + CSS: 
   Visual style for light and dark mode.
